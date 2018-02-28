@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*
+  Styling uses flex boxes to divide the navigation into 3 parts: title, nav-options, and the login button
+*/
+
+.nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  /* background: #95b6ff; */
+  background: rgba(255, 255, 255, 0.81);
+  box-shadow: 2px 2px 15px black;
+}
+
+.title-sec {
+  flex: 6;
+}
+
+.title-sec > h1 {
+  padding: 4px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.nav-sec {
+  display: flex;
+  flex-direction: row;
+  flex: 12;
+}
+
+.nav-sec > a {
+  flex: 1;
+  padding: 25px;
+  text-align: center;
+  font-size: 1em;
+  transition: background 0.5s, color 0.5s, font-size 0.5s;
+}
+
+.nav-sec > a:hover {
+  background: #ee8d87;
+  color: white;
+  font-size: 1.1em;
+}
+
+.nav-selected {
+  background: #ee8d87;
+  color: white;
+  font-size: 1.1em !important;
+}
+
+.login-sec {
+  flex: 2;
+}
+
+.login-sec > a {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 23px;
+  padding-right: 25px;
+  color: grey;
+  font-size: 0.95em;
+}
+
+.login-sec svg {
+  vertical-align: middle;
+  fill: grey;
+}
+
+.home {
+  background-image: url('../image/pink_blue_mountains.jpg');
+  background-size: cover;
+  height: 100vh;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 5px 5px 15px black;
+}
+
+.home > h1 {
+  margin: 0;
+  font-size: 3em;
+  padding-top: 45vh;
+}
+
+footer {
+  height: 4vh;
+  padding-top: 3vh;
+  font-size: 0.55em;
+}
+
+.content-container > h1 {
+  margin: 45px 15% 45px 15%;
+  font-size: 2.3em;
+}
+
+.content {
+  width: 90%;
+  height: calc(70vh - 45px);
+}
+
+.content p {
+  max-width: 700px;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.product-item {
+  padding-top: 50px;
+  width: 300px;
+}
+
+.product-item h1 {
+  font-size: 1.4em;
+}
+
+.product-item p {
+  color: grey;
+}
+
+.product-item img {
+  height: 200px;
+  transition: height 0.5s ease-out;
+}
+
+.product-item img:hover {
+  height: 220px;
+}
+
+.contact {
+  display: flex;
+}
+
+#maps {
+  padding-top: 20px;
+  height: 100%;
+  flex-grow: 2;
+}
+
+#maps:hover {
+  flex-grow: 2.7;
+}
+
+.contact > div {
+  flex-grow: 1;
+  transition: flex-grow 0.5s ease-out;
+}
+
+.contact-info:hover {
+  flex-grow: 1.3;
+}
+
+.contact-info {
+  font-size: 1.5em;
+}
+
+.login {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.login h1 {
+  color: black;
+  border-bottom: 1px solid grey;
+  max-width: 500px;
+  margin-top: 25vh;
+}
+
+.login-form {
+  color: grey;
+  max-width: 400px;
+}
+
+.login-form input {
+  border: 1px solid grey;
+  margin-bottom: 25px;
+  width: 80%;
+}
+
+.login-form button {
+  width: 100%;
+  background-color: white;
+  border: 1px solid grey;
+  margin-top: 25px;
+  padding: 5px;
+}
